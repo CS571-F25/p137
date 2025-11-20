@@ -24,10 +24,25 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  /* display: flex; */
+  /* place-items: center; */
   min-width: 320px;
   min-height: 100vh;
+
+  /* background-image: url('./assets/ControlRoom3.png'); adjust path if needed */
+  /* background-size: cover;          make it cover the whole viewport */
+  /* background-position: center;     center the image */
+  /* background-repeat: no-repeat;    don't tile */
+  /* background-attachment: fixed;     keeps it from moving */
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* horizontal center */
+  justify-content: center;  /* vertical center */
+  height: calc(100vh - 56px); /* full height minus navbar height */
+  padding-top: 56px;        /* push content below navbar */
 }
 
 h1 {
