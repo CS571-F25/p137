@@ -1,7 +1,11 @@
 .mission-wall {
   padding: 30px;
-  background-color: #0c0f12;
+  background-color: #0A0F18;
   min-height: 100vh;
+  position: relative;
+  z-index: 0;
+  overflow: visible;
+  
 }
 
 .screen-container {
@@ -12,14 +16,14 @@
 
 .screen-frame {
   background: #1b1e24;
-  border: 4px solid #3b3f46;
+  border: 4px solid #2c384e;
   border-radius: 12px;
   padding: 10px;
   width: 100%;
   max-width: 450px;
   box-shadow:
-    0 0 10px rgba(0,0,0,0.6),
-    inset 0 0 8px rgba(255,255,255,0.05);
+    0 0 10px #00000099,
+    inset 0 0 8px #ffffff0d;
 
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
@@ -27,6 +31,43 @@
 .screen-frame:hover {
   transform: scale(1.03);
   box-shadow:
-    0 0 20px rgba(0,255,255,0.25),
-    inset 0 0 10px rgba(255,255,255,0.06);
+    0 0 20px #00ffff40,
+    inset 0 0 10px #ffffff0f;
+}
+
+.stars {
+  position: absolute;     
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: drift linear infinite;
+}
+
+
+@keyframes drift {
+  from { transform: translateY(0); }
+  to   { transform: translateY(-110vh); } 
+}
+
+.countdown {
+  font-family: 'DSEG7Classic', monospace;
+  font-size: 3rem;
+  color: #00FF00;
+  background-color: #0a0a0a;
+  padding: 2rem 3rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 20px #00FF00;
+  text-align: center;
 }

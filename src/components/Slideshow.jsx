@@ -20,7 +20,7 @@ export default function Slideshow({ missions, interval = 3000 }) {
         width: "100%",
         height: "350px",
         backgroundColor: "#111",
-        border: "3px solid #00eaff",
+        border: "3px solid #FFD700",
         overflow: "hidden"
       }}
     >

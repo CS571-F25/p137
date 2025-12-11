@@ -2,11 +2,13 @@ import MissionCard from "../components/MissionCard";
 import { Container, Row, Col } from "react-bootstrap";
 import "./missions.css";
 import missions from "../data/missions";
+import Starfield from "../components/Starfield";
 
 export default function Missions() {
 
   return (
     <Container fluid className="mission-wall">
+      <Starfield/>
       <Row className="g-4">
         {missions.map((mission, index) => (
           <Col 

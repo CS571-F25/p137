@@ -11,8 +11,9 @@ export default function Navigationbar(props) {
                 <Nav>
                     <Nav.Link as={Link} to="/">Home</Nav.Link>
                     <Nav.Link as={Link} to="/missions">Missions</Nav.Link>
-                    <Nav.Link as={Link} to="/favorites">Favorites</Nav.Link>
-                    <Nav.Link as={Link} to="/about">About</Nav.Link>    
+                    <Nav.Link as={Link} to="/pictureoftheday">Picture of the Day</Nav.Link>
+                    <Nav.Link as={Link} to="/countdown">Countdown</Nav.Link>
+                    <Nav.Link as={Link} to="/about">About</Nav.Link>        
                 </Nav>
             </Navbar.Collapse>
         </Container>
