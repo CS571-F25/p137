@@ -1,7 +1,7 @@
 export default function APODCard(props) {
     return (
         <>
-            <h4 style={{color:"#FFD700"}}>{props.data.title}</h4>
+            <h2 style={{color:"#FFD700"}}>{props.data.title}</h2>
             {props.data.media_type === "image" && (
                 <img 
                     src={props.data.url} 

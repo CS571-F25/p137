@@ -55,13 +55,18 @@ export default function PotD(props) {
                 justifyContent: "center"
             }}>
                 <h1 style={{ color: "white", paddingBottom:"1rem"}}>Astronomy Picture of the Day</h1>
-                <input type="date" value={selectedDate} onChange={handleDateChange} max={todayStr} min={earliest} style={{
-                    backgroundColor: "#db00dbff",
-                    padding: "0.6rem 1rem",
-                    borderRadius: "0.375rem",
-                    border: "none",
-                    marginBottom:"1rem"
-                }}/>
+                <label htmlFor="dateInput" style={{ color: "#fff", display: "block", marginBottom: "0.5rem" }}>
+                    Select a date:
+                </label>
+                <input type="date" id="dateInput" value={selectedDate} onChange={handleDateChange} max={todayStr} min={earliest}
+                    style={{
+                        backgroundColor: "#db00dbff",
+                        padding: "0.6rem 1rem",
+                        borderRadius: "0.375rem",
+                        border: "none",
+                        marginBottom: "1rem"
+                    }}
+                />
                 
                 {!data || !data.url ? (
                     <div style={{

@@ -20,7 +20,7 @@ export default function AboutMe() {
       <Row className="mb-4 justify-content-center">
         <Col md={6}>
           <Card style={{ padding: "1.5rem", backgroundColor: "#1b1e24", color: "white", boxShadow: "0 0 15px #ffd70080" }}>
-            <h3 style={{ color: "#FFD700" }}>Experience</h3>
+            <h2 style={{ color: "#FFD700" }}>Experience</h2>
             <ul style={{ paddingLeft: "1.2rem" }}>
               <li>Senior Design Project – Biomechanical Knee Joint Testing: Validated an ISL to study knee joint mechanics as well as developed a surrogate knee for testing. Integrated the ISL with a Tormach robotic arm and ROS feedback loop for precise joint manipulation.</li>
               <li>Quality Engineer Intern, Mitsubishi Chemical Advanced Materials (Summer 2024): Performed inspections on high-performance thermoplastic parts, interpreted mechanical drawings/GD&T, and developed standard testing procedures to improve production efficiency.</li>
@@ -35,7 +35,7 @@ export default function AboutMe() {
       <Row className="mb-4 justify-content-center">
         <Col md={6}>
           <Card style={{ padding: "1.5rem", backgroundColor: "#1b1e24", color: "white", textAlign: "center", boxShadow: "0 0 15px #ffd70080" }}>
-            <h3 style={{ color: "#FFD700" }}>Resume</h3>
+            <h2 style={{ color: "#FFD700" }}>Resume</h2>
             <p>View a copy of my full resume to see my projects and experience.</p>
             <Button 
               href="/p137/Resume-JosephHanson.pdf" 
@@ -56,7 +56,7 @@ export default function AboutMe() {
       <Row className="mb-4 justify-content-center">
         <Col md={6}>
           <Card style={{ padding: "1.5rem", backgroundColor: "#1b1e24", color: "white", boxShadow: "0 0 15px rgba(255, 215, 0, 0.5)" }}>
-            <h3 style={{ color: "#FFD700" }}>Contact / Links</h3>
+            <h2 style={{ color: "#FFD700" }}>Contact / Links</h2>
             <p>Email: <a href="mailto:jhanson2838@outlook.com" style={{ color: "#00AACC" }}>jhanson2838@outlook.com</a></p>
             <p>LinkedIn: <a href="https://www.linkedin.com/in/joseph-hanson-uw/" target="_blank" style={{ color: "#00AACC" }}>www.linkedin.com/in/joseph-hanson-uw</a></p>
           </Card>
